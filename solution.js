@@ -11,12 +11,12 @@ export class Matrix {
   }
 
   get rows() {
-    console.log(this.numbersArray);
+    console.log(this.numbersArray)
     return this.numbersArray;
   }
 
   get columns() {
-    
+    return this.numbersArray
   }
   
 }
