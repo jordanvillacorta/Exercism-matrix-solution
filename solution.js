@@ -4,23 +4,24 @@
 //
 
 export class Matrix {
-  constructor(numbers) {
-    let splitNumbers = numbers.split('\n')
-    this.numbersArray = splitNumbers
+  constructor(matrixNumbers) {
+    let splitMatrixNumbers = matrixNumbers.split('\n')
+    this.matrixRows = splitMatrixNumbers
       .map(row => row.split(' ')
         .map(entry => +entry)
       )
   }
 
   get rows() {
-    return this.numbersArray
+    return this.matrixRows
   }
 
   get columns() {
-    let columnArray = this.numbersArray[0]
-      .map((entry, index) => this.numbersArray
+    let matrixColumns = this.matrixRows[0]
+      .map((entry, index) => this.matrixRows
         .map(row => row[index])
       )
-    return columnArray
+    console.log(matrixColumns)
+    return matrixColumns
   }
 }
