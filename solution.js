@@ -21,7 +21,6 @@ export class Matrix {
       .map((entry, index) => this.matrixRows
         .map(row => row[index])
       )
-    console.log(matrixColumns)
     return matrixColumns
   }
 }
